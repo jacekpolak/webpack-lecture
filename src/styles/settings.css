@@ -1,0 +1,8 @@
+:root {
+  --container-size: 1024px;
+  --global-font-size: 16px;
+}
+
+html {
+  font: var(--global-font-size) Arial, sans-serif;
+}

@@ -1,0 +1,9 @@
+.header-component {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.logo__img {
+  width: 200px;
+}
