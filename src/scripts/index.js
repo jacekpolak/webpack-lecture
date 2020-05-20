@@ -1,3 +1,12 @@
+import { presentationContent, showPresentaionButton } from './dom-selectors';
+import '../styles/normalize.css';
+import '../styles/settings.css';
+import '../styles/elements/button.css';
+import '../styles/components/container.css';
+import '../styles/components/header.css';
+import '../styles/components/presentation.css';
+import '../styles/utilities/hide.css';
+
 const hiddenClass = 'u-hidden';
 let isPresentationVisible = false;
 
@@ -18,7 +27,6 @@ const toggleButton = () => {
 }
 
 const togglePresentationState = () => {
-  console.log('test');
   togglePresentation();
   toggleButton();
   isPresentationVisible = !isPresentationVisible;
