@@ -1,4 +1,6 @@
 import { presentationContent, showPresentaionButton } from './dom-selectors';
+import html from '../template.html';
+import img from '../images/rs_school_js.svg';
 import '../styles/normalize.css';
 import '../styles/settings.css';
 import '../styles/elements/button.css';
