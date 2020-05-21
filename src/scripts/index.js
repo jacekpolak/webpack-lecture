@@ -18,7 +18,6 @@ const toggleButton = () => {
 }
 
 const togglePresentationState = () => {
-  console.log('test');
   togglePresentation();
   toggleButton();
   isPresentationVisible = !isPresentationVisible;
