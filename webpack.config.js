@@ -1,5 +1,5 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -11,19 +11,19 @@ module.exports = {
   },
   output: {
     filename: "[name].[contentHash].js",
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, "dist")
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
               name: "[name].[hash].[ext]",
               outputPath: "images"
@@ -33,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        use: ['html-loader'],
+        use: ["html-loader"],
       },
     ],
   },
